@@ -24,8 +24,8 @@ const siteConfig = {
   title: "WayCool Products Documentation", // Title for your website.
   tagline: "A Complete end to end solutions...",
   url: "https://Wayool.in", // Your website URL
-  //prod baseUrl : "https://waycoolfoodsandproducts.github.io/Financial_Dashboard_Frontend_Documentation/website/build/Financial Dashboard/"
-  baseUrl: "/", // Base URL for your project */
+  //prod baseUrl : "https://waycoolfoodsandproducts.github.io/Documentation/pages/"
+  baseUrl: "https://waycoolfoodsandproducts.github.io/Documentation/pages/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
