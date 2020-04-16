@@ -21,16 +21,17 @@ const users = [
 ];
 
 const siteConfig = {
-  title: "Receivables Fontend Docs", // Title for your website.
-  tagline: "A Finiancial Dashboard for managing finance of WayCool",
+  title: "WayCool Products Documentation", // Title for your website.
+  tagline: "A Complete end to end solutions...",
   url: "https://Wayool.in", // Your website URL
-  baseUrl: "https://waycoolfoodsandproducts.github.io/Financial_Dashboard_Frontend_Documentation/website/build/Financial Dashboard/", // Base URL for your project */
+  //prod baseUrl : "https://waycoolfoodsandproducts.github.io/Financial_Dashboard_Frontend_Documentation/website/build/Financial Dashboard/"
+  baseUrl: "/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: "Financial Dashboard",
+  projectName: "Documentation",
   organizationName: "WayCool",
   usePrism: ["jsx"],
   // For top-level user or org sites, the organization is still the same.
@@ -39,10 +40,10 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: "doc1", label: "Docs" },
-    { doc: "doc4", label: "API" },
-    { page: "help", label: "Help" },
-    { blog: true, label: "Blog" },
+    { doc: "financialDashboard/doc1", label: "Docs" },
+    { doc: "financialDashboard/doc4", label: "API" },
+    // { page: "help", label: "Help" },
+    // { blog: true, label: "Blog" },
   ],
 
   // If you have users set above, you add it here:
@@ -74,7 +75,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} WayCool Foods & Products`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.

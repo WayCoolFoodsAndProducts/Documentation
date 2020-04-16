@@ -64,9 +64,9 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            {/* <Button href="#try">Try It Out</Button> */}
+            <Button href={docUrl('financialDashboard/doc1.html')}>Financial Dashboard Web Docs</Button>
+            <Button href={docUrl('myPrice/mp_doc1.html')}>My Price Dashboard Web Docs</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -96,8 +96,8 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        <h2>Our Features</h2>
+        <MarkdownBlock>Information management tool that tracks, gathers, and displays business data in interactive and customizable visualizations that enable users to monitor the health of a business, analyze processes, and provide them with actionable insights.</MarkdownBlock>
       </div>
     );
 
@@ -106,12 +106,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+              'Real-time is all the rage these days, and why shouldn’t it be? Just think - your data automatically updated without the tedious and error-prone practice of manually entering new information. A real time dashboard allows you to monitor activity as it happens throughout your business processes. Your charts and reports are updated continuously in less than a second after the action occurs. Gone are the days of a decision-maker requesting a report for a meeting that gets rescheduled leading the report preparer to have to do the work twice. No matter when you need to look at the report, the charts are up to date.',
+            image: `${baseUrl}img/piechart.png`, //undraw_code_review.svg
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
+            title: 'You get real-time updates.',
           },
         ]}
       </Block>
@@ -122,10 +120,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'This is another description of how this project is useful',
+              'All your key performance indicators become visible from a centralized location, formed on a single screen, no matter the data source(s) you need to utilize. You can easily connect flat files, CRM- and ERP data, databases, helpdesk, social media, and many more, that will provide you with instant access to all the business information you might gather and need to analyze. ',
             image: `${baseUrl}img/undraw_note_list.svg`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'What does are tools provide?',
           },
         ]}
       </Block>
@@ -136,10 +134,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+              'With the possibility to utilize artificial intelligence, the dashboarding software augments the traditional means of monitoring, analyzing, and generating actionable insights, and takes you to the next level of data management. If a business anomaly occurs or a specific goal is met, modern tools will instantaneously alert you, hence, you can take immediate action and prevent a business disaster or celebrate your newly reached goals. You can benefit from neural networks, pattern recognition or threshold alerts that will help you spot trends and identify patterns, notifying you on important changes even on your mobile.',
+            image: `${baseUrl}img/myteam.png`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
+            title: 'Keep track of all the transactions',
           },
         ]}
       </Block>
@@ -149,16 +147,16 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
+            content: 'Systematic and logical arrangement of data in the form of Rows and Columns with respect to the characteristics of data',
             image: `${baseUrl}img/undraw_react.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Tabular Representation',
           },
           {
-            content: 'The content of my second feature',
+            content: 'Visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, outliers, and patterns in data.',
             image: `${baseUrl}img/undraw_operating_system.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Graphical View',
           },
         ]}
       </Block>
@@ -202,7 +200,7 @@ class Index extends React.Component {
           <LearnHow />
           <TryOut />
           <Description />
-          <Showcase />
+          {/* <Showcase /> */}
         </div>
       </div>
     );

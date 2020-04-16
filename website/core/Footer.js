@@ -38,18 +38,18 @@ class Footer extends React.Component {
           <div>
             <h5>Docs</h5>
             <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+              GitHub Credentials
             </a>
             <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
+            Getting Started
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
+            {/* <a href={this.docUrl('doc3.html', this.props.language)}>
               API Reference (or other categories)
-            </a>
+            </a> */}
           </div>
           <div>
             <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>
+            {/* <a href={this.pageUrl('users.html', this.props.language)}>
               User Showcase
             </a>
             <a
@@ -58,9 +58,15 @@ class Footer extends React.Component {
               rel="noreferrer noopener">
               Stack Overflow
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
+            <a href="https://discordapp.com/">Project Chat</a> */}
+             <a
+              href="https://www.facebook.com/WayCoolFoods"
+              target="_blank"
+              rel="noreferrer noopener">
+              Facebook
+            </a>
             <a
-              href="https://twitter.com/"
+              href="https://twitter.com/WayCoolFoods"
               target="_blank"
               rel="noreferrer noopener">
               Twitter
@@ -68,11 +74,11 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
+            {/* <a href={`${this.props.config.baseUrl}blog`}>Blog</a> */}
+            <a href="https://github.com/WayCoolFoodsAndProducts/">GitHub</a>
             <a
               className="github-button"
-              href={this.props.config.repoUrl}
+              href="https://github.com/WayCoolFoodsAndProducts/"
               data-icon="octicon-star"
               data-count-href="/facebook/docusaurus/stargazers"
               data-show-count="true"
@@ -106,13 +112,13 @@ class Footer extends React.Component {
         </section>
 
         <a
-          href="https://opensource.facebook.com/"
+          href="https://waycool.in/"
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource">
           <img
-            src={`${this.props.config.baseUrl}img/oss_logo.png`}
-            alt="Facebook Open Source"
+            src={`${this.props.config.baseUrl}img/waycool.png`}
+            alt="Waycool Foods & Products"
             width="170"
             height="45"
           />

@@ -1,5 +1,29 @@
 {
+  
   "docs": {
-    "Getting Started": ["doc1", "doc2", "doc3", "doc4", "doc5"]
+    "Financial Dashboard": [
+      {
+        "type": "subcategory",
+        "label": "Getting Started",
+        "ids": ["financialDashboard/doc1","financialDashboard/doc2","financialDashboard/doc3","financialDashboard/doc4"]
+      },
+      {
+        "type": "subcategory",
+        "label": "Components",
+        "ids": ["financialDashboard/doc5"]
+      },
+      {
+        "type": "subcategory",
+        "label": "API",
+        "ids": ["financialDashboard/doc6"]
+      }
+    ],
+    "My Price Dashboard": [
+      {
+        "type": "subcategory",
+        "label": "Getting Started",
+        "ids": ["myPrice/mp_doc1"]
+      }
+    ]
   }
 }

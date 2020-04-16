@@ -3,32 +3,43 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "A Finiancial Dashboard for managing finance of WayCool",
+    "tagline": "A Complete end to end solutions...",
     "docs": {
-      "doc1": {
+      "financialDashboard/doc1": {
         "title": "Github Credentials",
         "sidebar_label": "Github Credentials"
       },
-      "doc2": {
+      "financialDashboard/doc2": {
         "title": "Getting Started",
         "sidebar_label": "Getting Started"
       },
-      "doc3": {
+      "financialDashboard/doc3": {
         "title": "Project Directory Structure",
         "sidebar_label": "Project Directory Structure"
       },
-      "doc4": {
+      "financialDashboard/doc4": {
         "title": "Creating Build"
+      },
+      "financialDashboard/doc5": {
+        "title": "Source Folder",
+        "sidebar_label": "Source ( /src ) Folder"
+      },
+      "financialDashboard/doc6": {
+        "title": "Dashboard.js",
+        "sidebar_label": "Dashboard.js"
+      },
+      "myPrice/mp_doc1": {
+        "title": "Getting Started",
+        "sidebar_label": "Getting Started"
       }
     },
     "links": {
       "Docs": "Docs",
-      "API": "API",
-      "Help": "Help",
-      "Blog": "Blog"
+      "API": "API"
     },
     "categories": {
-      "Getting Started": "Getting Started"
+      "Financial Dashboard": "Financial Dashboard",
+      "My Price Dashboard": "My Price Dashboard"
     }
   },
   "pages-strings": {
