@@ -24,7 +24,7 @@ const siteConfig = {
   title: "Receivables Fontend Docs", // Title for your website.
   tagline: "A Finiancial Dashboard for managing finance of WayCool",
   url: "https://Wayool.in", // Your website URL
-  baseUrl: "/https://waycoolfoodsandproducts.github.io/Financial_Dashboard_Frontend_Documentation/website/build/Financial Dashboard/", // Base URL for your project */
+  baseUrl: "https://waycoolfoodsandproducts.github.io/Financial_Dashboard_Frontend_Documentation/website/build/Financial Dashboard/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
