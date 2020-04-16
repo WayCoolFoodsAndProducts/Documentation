@@ -1,0 +1,494 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Project Directory Structure · Receivables Fontend Docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;!--JavaScript--&gt;"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Project Directory Structure · Receivables Fontend Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://Wayool.in/"/><meta property="og:description" content="&lt;!--JavaScript--&gt;"/><meta property="og:image" content="https://Wayool.in/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://Wayool.in/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://Wayool.in/blog/atom.xml" title="Receivables Fontend Docs Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://Wayool.in/blog/feed.xml" title="Receivables Fontend Docs Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/prism.css"/><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/favicon.ico" alt="Receivables Fontend Docs"/><h2 class="headerTitleWithLogo">Receivables Fontend Docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/doc1" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/docs/doc4" target="_self">API</a></li><li class=""><a href="/help" target="_self">Help</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc1">Github Credentials</a></li><li class="navListItem"><a class="navItem" href="/docs/doc2">Getting Started</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/doc3">Project Directory Structure</a></li><li class="navListItem"><a class="navItem" href="/docs/doc4">Creating Build</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Project Directory Structure</h1></header><article><div><span><!--JavaScript-->
+<pre><code class="hljs css language-js">.
+├── README.md
+├── config
+│   ├── env.js
+│   ├── jest
+│   │   ├── cssTransform.js
+│   │   └── fileTransform.js
+│   ├── modules.js
+│   ├── paths.js
+│   ├── pnpTs.js
+│   ├── webpack.config.js
+│   └── webpackDevServer.config.js
+├── docs
+│   ├── doc1.md
+│   ├── doc2.md
+│   ├── doc3.md
+│   ├── exampledoc4.md
+│   └── exampledoc5.md
+├── package-lock.json
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── images
+│   │   ├── chat
+│   │   │   ├── attachment.jpg
+│   │   │   ├── download.jpg
+│   │   │   └── send.png
+│   │   ├── collectionprogress
+│   │   │   └── arrowLeft.png
+│   │   ├── dashboard
+│   │   │   ├── filter.svg
+│   │   │   ├── hand.svg
+│   │   │   ├── map-pin.svg
+│   │   │   ├── pinky-promise.svg
+│   │   │   ├── reset.svg
+│   │   │   ├── rupee-indian.svg
+│   │   │   ├── user.svg
+│   │   │   └── users.svg
+│   │   ├── disputes
+│   │   │   ├── closed.png
+│   │   │   ├── <span class="hljs-keyword">new</span>.png
+│   │   │   ├── ongoing.png
+│   │   │   └── xcircle.png
+│   │   ├── fieldexecutive
+│   │   │   ├── cash.svg
+│   │   │   ├── cheque.svg
+│   │   │   ├── demanddraft.svg
+│   │   │   ├── person1.jpeg
+│   │   │   ├── person2.jpeg
+│   │   │   ├── person3.jpeg
+│   │   │   └── person4.jpeg
+│   │   ├── sidenav
+│   │   │   ├── activitylogs.png
+│   │   │   ├── collection.png
+│   │   │   ├── collectionprogress.png
+│   │   │   ├── dispute.png
+│   │   │   ├── filled
+│   │   │   │   ├── activitylogs.png
+│   │   │   │   ├── collection.png
+│   │   │   │   ├── dispute.png
+│   │   │   │   ├── home.png
+│   │   │   │   ├── master data filled icon.png
+│   │   │   │   ├── mycustomers.png
+│   │   │   │   ├── mytasks.png
+│   │   │   │   └── myteam.png
+│   │   │   ├── home.png
+│   │   │   ├── mapinvoices.png
+│   │   │   ├── mycustomer.png
+│   │   │   ├── mycustomers.png
+│   │   │   ├── mysubmissions.png
+│   │   │   ├── mytasks.png
+│   │   │   ├── myteam.png
+│   │   │   ├── onlinecollection.png
+│   │   │   ├── physicalcollection.png
+│   │   │   ├── temp
+│   │   │   ├── user.png
+│   │   │   ├── waycool.png
+│   │   │   └── waycool2.png
+│   │   ├── table
+│   │   │   ├── download.svg
+│   │   │   ├── filter.svg
+│   │   │   ├── search.svg
+│   │   │   └── send.svg
+│   │   ├── userplaceholder.png
+│   │   └── userplaceholder2.png
+│   └── index.html
+├── scripts
+│   ├── build.js
+│   ├── start.js
+│   └── test.js
+├── src
+│   ├── Components
+│   │   ├── App.js
+│   │   ├── Assets
+│   │   │   ├── Dashboard
+│   │   │   │   ├── calendar.svg
+│   │   │   │   ├── filter.svg
+│   │   │   │   ├── user.svg
+│   │   │   │   └── users.svg
+│   │   │   ├── Data
+│   │   │   │   ├── CollectionProgress.js
+│   │   │   │   ├── Dashboard.js
+│   │   │   │   ├── Denominations.js
+│   │   │   │   ├── Disputes.js
+│   │   │   │   ├── FieldExecutiveData.js
+│   │   │   │   ├── MapInvoicesCollection.js
+│   │   │   │   ├── MyTeamData.js
+│   │   │   │   ├── OnlineCollectionData.js
+│   │   │   │   └── SubmissionsData.js
+│   │   │   ├── Header
+│   │   │   │   ├── baseline-search<span class="hljs-number">-24</span>px.svg
+│   │   │   │   ├── outline-notifications<span class="hljs-number">-24</span>px.svg
+│   │   │   │   └── outline-settings<span class="hljs-number">-24</span>px.svg
+│   │   │   ├── Offline_Collection_Cards
+│   │   │   │   ├── Group.svg
+│   │   │   │   ├── cash.svg
+│   │   │   │   ├── cash_white.svg
+│   │   │   │   ├── cheque.svg
+│   │   │   │   ├── cheque_white.svg
+│   │   │   │   ├── chevron-right.svg
+│   │   │   │   ├── demanddraft.svg
+│   │   │   │   ├── demanddraft_white.svg
+│   │   │   │   ├── money-bag.svg
+│   │   │   │   ├── money.svg
+│   │   │   │   ├── search.svg
+│   │   │   │   ├── user.svg
+│   │   │   │   └── verified.svg
+│   │   │   ├── Online_Collections
+│   │   │   │   ├── chevron-right.svg
+│   │   │   │   ├── filter.svg
+│   │   │   │   └── search.svg
+│   │   │   ├── Submissions
+│   │   │   │   ├── sortby.svg
+│   │   │   │   └── user.svg
+│   │   │   ├── image_not_found.png
+│   │   │   ├── menu.svg
+│   │   │   ├── waycoolLogo.png
+│   │   │   └── waycoolLogo@<span class="hljs-number">4</span>x@<span class="hljs-number">2</span>x.png
+│   │   ├── Common
+│   │   │   ├── CheckboxLogic.js
+│   │   │   ├── FileFormats.js
+│   │   │   ├── Format.js
+│   │   │   ├── Header
+│   │   │   │   ├── Header.js
+│   │   │   │   └── Header.scss
+│   │   │   ├── PaginationLogic.js
+│   │   │   ├── Sidebar
+│   │   │   │   ├── Sidebar.js
+│   │   │   │   └── Sidebar.scss
+│   │   │   ├── TextCapitalize.js
+│   │   │   ├── ToasterCreator.js
+│   │   │   ├── createUniqueName.js
+│   │   │   └── handleSidebar.js
+│   │   ├── Constant
+│   │   │   ├── BarGraphPopupData.js
+│   │   │   ├── CollectionProgressStages.js
+│   │   │   ├── PaymentModes.js
+│   │   │   ├── Tabs.js
+│   │   │   └── accessControl.js
+│   │   ├── Screens
+│   │   │   ├── AccessDenied.js
+│   │   │   ├── ActivityLogs
+│   │   │   │   ├── ActivityLogs.js
+│   │   │   │   └── ActivityLogs.scss
+│   │   │   ├── Auth.js
+│   │   │   ├── BasicLayout.js
+│   │   │   ├── CollectionProgress
+│   │   │   │   ├── CollectionProgress.js
+│   │   │   │   └── CollectionProgress.scss
+│   │   │   ├── Dashboard
+│   │   │   │   ├── CustomerOutstanding.js
+│   │   │   │   ├── CustomerOutstanding.scss
+│   │   │   │   ├── Dashboard.js
+│   │   │   │   └── Dashboard.scss
+│   │   │   ├── Disputes
+│   │   │   │   ├── Chat.js
+│   │   │   │   ├── Chat.scss
+│   │   │   │   ├── CollectionDisputes.js
+│   │   │   │   ├── CollectionDisputes.scss
+│   │   │   │   ├── CreditDisputes.js
+│   │   │   │   ├── CreditDisputes.scss
+│   │   │   │   ├── DebitDisputes.js
+│   │   │   │   ├── DebitDisputes.scss
+│   │   │   │   ├── InvoiceDisputes.js
+│   │   │   │   ├── InvoiceDisputes.scss
+│   │   │   │   ├── PaymentDisputes.js
+│   │   │   │   └── PaymentDisputes.scss
+│   │   │   ├── MapInvoices
+│   │   │   │   ├── Collection.js
+│   │   │   │   ├── Collection.scss
+│   │   │   │   ├── MapInvoices.js
+│   │   │   │   └── MapInvoices.scss
+│   │   │   ├── MyCustomer
+│   │   │   │   ├── MyCustomer.js
+│   │   │   │   └── MyCustomer.scss
+│   │   │   ├── MyTeam
+│   │   │   │   ├── MyTeam.js
+│   │   │   │   ├── MyTeam.scss
+│   │   │   │   ├── Performance.js
+│   │   │   │   └── Performance.scss
+│   │   │   ├── OnlineCollection
+│   │   │   │   ├── OnlineCollection.js
+│   │   │   │   └── OnlineCollection.scss
+│   │   │   ├── PhysicalCollection
+│   │   │   │   ├── Collection.js
+│   │   │   │   ├── Collection.scss
+│   │   │   │   ├── CustomerCollection.js
+│   │   │   │   ├── CustomerCollection.scss
+│   │   │   │   ├── FieldExecutive.js
+│   │   │   │   ├── FieldExecutive.scss
+│   │   │   │   ├── MapInvoices.js
+│   │   │   │   ├── MapInvoices.scss
+│   │   │   │   ├── PhysicalCollection.js
+│   │   │   │   └── PhysicalCollection.scss
+│   │   │   └── Submissions
+│   │   │       ├── Submissions.js
+│   │   │       └── Submissions.scss
+│   │   ├── Services
+│   │   │   ├── Api.js
+│   │   │   └── History.js
+│   │   └── Utils
+│   │       ├── AcceptBtn
+│   │       │   └── AcceptBtn.js
+│   │       ├── Autosuggests
+│   │       │   ├── Autosuggests.js
+│   │       │   └── Autosuggests.scss
+│   │       ├── BulkAction
+│   │       │   ├── BulkAction.js
+│   │       │   └── BulkAction.scss
+│   │       ├── Calender
+│   │       │   ├── Calender.js
+│   │       │   └── Calender.scss
+│   │       ├── CheckBox
+│   │       │   ├── CheckBox.js
+│   │       │   └── CheckBox.scss
+│   │       ├── ChequeOrDraftCards
+│   │       │   ├── Collection
+│   │       │   │   ├── ChequeOrDraftCollection.js
+│   │       │   │   └── ChequeOrDraftCollection.scss
+│   │       │   └── Submittion
+│   │       │       ├── ChequeOrDraftSubmittion.js
+│   │       │       └── ChequeOrDraftSubmittion.scss
+│   │       ├── CollectionProgress
+│   │       │   ├── Table.js
+│   │       │   ├── Table.scss
+│   │       │   ├── TrackProgress.js
+│   │       │   └── TrackProgress.scss
+│   │       ├── CrossButton.js
+│   │       ├── Dashboard
+│   │       │   ├── AutoMultiSelect.js
+│   │       │   ├── AutoMultiSelect.scss
+│   │       │   ├── Autosuggests.js
+│   │       │   ├── Autosuggests.scss
+│   │       │   ├── BarGraph.js
+│   │       │   ├── BarGraph.scss
+│   │       │   ├── BarGraphPopup.js
+│   │       │   ├── BarGraphPopup.scss
+│   │       │   ├── Cards.js
+│   │       │   ├── Cards.scss
+│   │       │   ├── CustomerOutstandingTable.js
+│   │       │   ├── CustomerOutstandingTable.scss
+│   │       │   ├── FilterBox.js
+│   │       │   ├── FilterBox.scss
+│   │       │   ├── FilterTagsDisplay.js
+│   │       │   ├── FilterTagsDisplay.scss
+│   │       │   ├── FromToDateRange.js
+│   │       │   ├── FromToDateRange.scss
+│   │       │   ├── LineGraph.js
+│   │       │   ├── LineGraph.scss
+│   │       │   ├── PieChart.js
+│   │       │   ├── PieChart.scss
+│   │       │   ├── ScatterGraph.js
+│   │       │   ├── ScatterGraph.scss
+│   │       │   ├── Table.js
+│   │       │   ├── Table.scss
+│   │       │   ├── TableHeader.js
+│   │       │   └── TableHeader.scss
+│   │       ├── DenominationCardContainer
+│   │       │   ├── DenominationCardContainer.js
+│   │       │   └── DenominationCardContainer.scss
+│   │       ├── DenominationCards
+│   │       │   ├── DenominationCards.js
+│   │       │   └── DenominationCards.scss
+│   │       ├── DenominationCollection
+│   │       │   ├── DenominationCollection.js
+│   │       │   └── DenominationCollection.scss
+│   │       ├── DenominationSubmittion
+│   │       │   ├── DenominationSubmittion.js
+│   │       │   └── DenominationSubmittion.scss
+│   │       ├── DifferenceStrip
+│   │       │   ├── DifferenceStrip.js
+│   │       │   └── DifferenceStrip.scss
+│   │       ├── Disputes
+│   │       │   ├── AddParticipant.js
+│   │       │   ├── AddParticipant.scss
+│   │       │   ├── ChatBox.js
+│   │       │   ├── ChatBox.scss
+│   │       │   ├── ChatBubble.js
+│   │       │   ├── ChatBubble.scss
+│   │       │   ├── DisputeCard.js
+│   │       │   ├── DisputeCard.scss
+│   │       │   ├── Form.js
+│   │       │   ├── Form.scss
+│   │       │   ├── Table.js
+│   │       │   ├── Table.scss
+│   │       │   ├── ViewDocs.js
+│   │       │   └── ViewDocs.scss
+│   │       ├── FilterButton
+│   │       │   ├── FilterButton.js
+│   │       │   └── FilterButton.scss
+│   │       ├── FormFieldInput
+│   │       │   ├── FormFieldInput.js
+│   │       │   └── FormFieldInput.scss
+│   │       ├── FormFieldShow
+│   │       │   ├── FormFieldShow.js
+│   │       │   └── FormFieldShow.scss
+│   │       ├── IconWithBackground
+│   │       │   ├── IconWithBackground.js
+│   │       │   └── IconWithBackground.scss
+│   │       ├── ImageWithTitle
+│   │       │   ├── ImageWithTitle.js
+│   │       │   └── ImageWithTitle.scss
+│   │       ├── MapInvoices
+│   │       │   ├── Collection
+│   │       │   │   ├── Table.js
+│   │       │   │   └── Table.scss
+│   │       │   └── Table
+│   │       │       ├── Table.js
+│   │       │       └── Table.scss
+│   │       ├── MultiSelectDropdown
+│   │       │   ├── MultiSelectDropdown.js
+│   │       │   └── MultiSelectDropdown.scss
+│   │       ├── MyCustomer
+│   │       │   ├── MoneyCards.js
+│   │       │   ├── MoneyCards.scss
+│   │       │   ├── Table.js
+│   │       │   └── Table.scss
+│   │       ├── MyTeam
+│   │       │   └── Table
+│   │       │       ├── Table.js
+│   │       │       └── Table.scss
+│   │       ├── OfflineCards
+│   │       │   ├── OfflineCards.js
+│   │       │   └── OfflineCards.scss
+│   │       ├── OfflineCollection
+│   │       │   ├── Autosuggests.js
+│   │       │   └── Autosuggests.scss
+│   │       ├── OnlineCollection
+│   │       │   ├── Button
+│   │       │   │   ├── Button.js
+│   │       │   │   └── Button.scss
+│   │       │   ├── Filter
+│   │       │   │   ├── Filter.js
+│   │       │   │   └── Filter.scss
+│   │       │   ├── Search
+│   │       │   │   ├── Search.js
+│   │       │   │   └── Search.scss
+│   │       │   └── Table
+│   │       │       ├── Table.js
+│   │       │       └── Table.scss
+│   │       ├── Pagination
+│   │       │   ├── Pagination.js
+│   │       │   └── Pagination.scss
+│   │       ├── PaymentModeStrip
+│   │       │   ├── PaymentModeStrip.js
+│   │       │   └── PaymentModeStrip.scss
+│   │       ├── Performance
+│   │       │   ├── BarChart.js
+│   │       │   ├── BarChart.scss
+│   │       │   ├── OverviewCards.js
+│   │       │   ├── OverviewCards.scss
+│   │       │   ├── PieChart.js
+│   │       │   └── PieChart.scss
+│   │       ├── SelectDropdown
+│   │       │   ├── SelectDropdown.js
+│   │       │   └── SelectDropdown.scss
+│   │       ├── SidebarOptions
+│   │       │   ├── SidebarOptions.js
+│   │       │   └── SidebarOptions.scss
+│   │       ├── SortBy
+│   │       │   ├── SortBy.js
+│   │       │   └── SortBy.scss
+│   │       ├── Submissions
+│   │       │   └── Table
+│   │       │       ├── Table.js
+│   │       │       └── Table.scss
+│   │       ├── Table
+│   │       │   ├── Table.js
+│   │       │   └── Table.scss
+│   │       ├── TableHeader
+│   │       │   ├── TableHeader.js
+│   │       │   └── TableHeader.scss
+│   │       └── Toaster
+│   │           ├── Toaster.js
+│   │           └── Toaster.scss
+│   ├── index.css
+│   ├── index.js
+│   └── serviceWorker.js
+└── website
+    ├── README.md
+    ├── blog
+    │   ├── <span class="hljs-number">2016</span><span class="hljs-number">-03</span><span class="hljs-number">-11</span>-blog-post.md
+    │   ├── <span class="hljs-number">2017</span><span class="hljs-number">-04</span><span class="hljs-number">-10</span>-blog-post-two.md
+    │   ├── <span class="hljs-number">2017</span><span class="hljs-number">-09</span><span class="hljs-number">-25</span>-testing-rss.md
+    │   ├── <span class="hljs-number">2017</span><span class="hljs-number">-09</span><span class="hljs-number">-26</span>-adding-rss.md
+    │   └── <span class="hljs-number">2017</span><span class="hljs-number">-10</span><span class="hljs-number">-24</span>-<span class="hljs-keyword">new</span>-version<span class="hljs-number">-1.0</span><span class="hljs-number">.0</span>.md
+    ├── core
+    │   └── Footer.js
+    ├── i18n
+    │   └── en.json
+    ├── package-lock.json
+    ├── package.json
+    ├── pages
+    │   └── en
+    │       ├── help.js
+    │       ├── index.js
+    │       └── users.js
+    ├── sidebars.json
+    ├── siteConfig.js
+    └── <span class="hljs-keyword">static</span>
+        ├── css
+        │   └── custom.css
+        └── img
+            ├── favicon.ico
+            ├── oss_logo.png
+            ├── undraw_code_review.svg
+            ├── undraw_monitor.svg
+            ├── undraw_note_list.svg
+            ├── undraw_online.svg
+            ├── undraw_open_source.svg
+            ├── undraw_operating_system.svg
+            ├── undraw_react.svg
+            ├── undraw_tweetstorm.svg
+            ├── undraw_youtube_tutorial.svg
+            └── waycool.png
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/doc2"><span class="arrow-prev">← </span><span>Getting Started</span></a><a class="docs-next button" href="/docs/doc4"><span>Creating Build</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/favicon.ico" alt="Receivables Fontend Docs" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 Your Name or Your Company Name</section></footer></div></body></html>
