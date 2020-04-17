@@ -1,11 +1,15 @@
 {
-  
   "docs": {
     "Financial Dashboard": [
       {
         "type": "subcategory",
         "label": "Getting Started",
-        "ids": ["financialDashboard/doc1","financialDashboard/doc2","financialDashboard/doc3","financialDashboard/doc4"]
+        "ids": [
+          "financialDashboard/doc1",
+          "financialDashboard/doc2",
+          "financialDashboard/doc3",
+          "financialDashboard/doc4"
+        ]
       },
       {
         "type": "subcategory",
@@ -15,9 +19,18 @@
       {
         "type": "subcategory",
         "label": "API",
-        "ids": ["financialDashboard/doc6"]
+        "ids": [
+          "financialDashboard/doc6",
+          "financialDashboard/doc7",
+          "financialDashboard/doc8",
+          "financialDashboard/doc9",
+          "financialDashboard/doc10",
+          "financialDashboard/doc11",
+          "financialDashboard/doc12"
+        ]
       }
     ],
+
     "My Price Dashboard": [
       {
         "type": "subcategory",

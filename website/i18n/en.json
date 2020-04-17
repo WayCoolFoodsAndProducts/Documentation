@@ -9,6 +9,18 @@
         "title": "Github Credentials",
         "sidebar_label": "Github Credentials"
       },
+      "financialDashboard/doc10": {
+        "title": "MyCustomer.js",
+        "sidebar_label": "MyCustomer.js"
+      },
+      "financialDashboard/doc11": {
+        "title": "MyTeam.js",
+        "sidebar_label": "MyTeam.js"
+      },
+      "financialDashboard/doc12": {
+        "title": "OnlineCollections.js",
+        "sidebar_label": "OnlineCollections.js"
+      },
       "financialDashboard/doc2": {
         "title": "Getting Started",
         "sidebar_label": "Getting Started"
@@ -27,6 +39,18 @@
       "financialDashboard/doc6": {
         "title": "Dashboard.js",
         "sidebar_label": "Dashboard.js"
+      },
+      "financialDashboard/doc7": {
+        "title": "CollectionProgress.js",
+        "sidebar_label": "CollectionProgress.js"
+      },
+      "financialDashboard/doc8": {
+        "title": "Disputes",
+        "sidebar_label": "Disputes"
+      },
+      "financialDashboard/doc9": {
+        "title": "MapInvoices.js",
+        "sidebar_label": "MapInvoices.js"
       },
       "myPrice/mp_doc1": {
         "title": "Getting Started",
