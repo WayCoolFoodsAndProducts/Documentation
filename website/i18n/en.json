@@ -21,6 +21,14 @@
         "title": "OnlineCollections.js",
         "sidebar_label": "OnlineCollections.js"
       },
+      "financialDashboard/doc13": {
+        "title": "PhysicalCollection",
+        "sidebar_label": "PhysicalCollection"
+      },
+      "financialDashboard/doc14": {
+        "title": "Submissions.js",
+        "sidebar_label": "Submissions.js"
+      },
       "financialDashboard/doc2": {
         "title": "Getting Started",
         "sidebar_label": "Getting Started"
