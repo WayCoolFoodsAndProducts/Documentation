@@ -37,7 +37,17 @@
       {
         "type": "subcategory",
         "label": "Getting Started",
-        "ids": ["myPrice/mp_doc1"]
+        "ids": [
+          "myPrice/mp_doc1",
+          "myPrice/mp_doc2",
+          "myPrice/mp_doc3",
+          "myPrice/mp_doc4"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Components",
+        "ids": ["myPrice/mp_doc5"]
       }
     ]
   }

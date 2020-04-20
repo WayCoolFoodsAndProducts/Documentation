@@ -1,4 +1,6 @@
 {
+  "author": "Sagar Bajpai",
+  "Github": "https://www.GitHub.com/SagarBajpai", 
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "BROWSER=none docusaurus-start",

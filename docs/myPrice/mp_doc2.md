@@ -1,6 +1,6 @@
 ---
-id: doc2
-title: Getting Started
+id: mp_doc2
+title:  Getting Started
 sidebar_label: Getting Started
 ---
 
@@ -10,9 +10,8 @@ You will need a working version of Node (tested with v8.10.0) and NPM to get sta
 
 Our modern front end development stack includes the following tools:
  
-* [ReactJs](https://reactjs.org/docs/getting-started.html)
+* [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 * [SASS](https://sass-lang.com/)
-* [React Google Charts](https://www.npmjs.com/package/react-google-charts)
 
 We use the following libraries:
 * [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) 
@@ -33,25 +32,26 @@ npm start
 ```
 
 Runs the app in the development mode.
-Open http://localhost.com/3007 to view it in the browser.
+Open http://localhost.com/3005 to view it in the browser.
 The page will reload if you make edits.
 You will also see any lint errors in the console.
 
-Also you can change the `PORT` by changing `PORT=3007` inside `.env` in a root directory.
+Also you can change the `PORT` by changing `PORT=3005` inside `.env` in a root directory.
 
-## Employee Not Found
+## Access Denied
 
 So you must be wondering that why you are not able to access the Dashboard.
 
-![Employee Not Found](assets/doc2employeenotfound.png)
+![Access Denied](assets/myPrice/access_denied.png)
 
 ## Access Dashboard
 
-You need to access the dashabord with a valid WayCool employee code, something like `WFP/705/19`. As the Dashboard is integrated with [OneWaycool](http://one.waycool.in/), user is suppose to land on the Receivable Dashboard with his WayCool employee code, which is suppose to be checked by Receivable Backend.
+Access below is mocked by the similar approach used in **Financial Dashboard**.
+You need to access the dashabord with a valid WayCool employee code, something like `WFP/705/19`. As the Dashboard is integrated with [OneWaycool](http://one.waycool.in/), user is suppose to land on the Receivable Dashboard with his WayCool employee code, which is suppose to be checked by My Price Backend.
 
-One can access the Dashboard by using `http://localhost:3007?empCode=WFP/505/19`
+One can access the Dashboard by using `http://localhost:3005?empCode=WFP/505/19`
 
-![Dashboard](assets/doc2dashboard.png)
+![Dashboard](assets/myPrice/dashboard.png)
 
 ## Create Build
 
@@ -64,4 +64,4 @@ It correctly bundles React in production mode and optimizes the `build` for the 
 The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
-For knowing more about how to create prodution build or development build, refer to [Creating Build](doc4.md).
+For knowing more about how to create prodution build or development build, refer to [Creating Build](myPrice/mp_doc4.md).

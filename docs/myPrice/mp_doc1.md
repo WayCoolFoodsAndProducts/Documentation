@@ -1,7 +1,17 @@
 ---
 id: mp_doc1
-title:  Getting Started
-sidebar_label: Getting Started
+title:  Github Credentials
+sidebar_label: Github Credentials
 ---
 
-## Work Under Progress
+Check the [Github](https://github.com/WayCoolFoodsAndProducts/Myprice_Frontend_Dashboard) link to see the respositary.
+
+## Development
+
+Project's Frontend is created by [Sagar Bajpai](https://www.linkedin.com/in/SagarBajpai/), under the management of **Samvidha Anippindi**.
+
+## Clone a project
+
+```
+git clone https://github.com/WayCoolFoodsAndProducts/Myprice_Frontend_Dashboard.git
+```

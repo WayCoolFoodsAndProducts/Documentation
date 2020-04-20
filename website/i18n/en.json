@@ -61,6 +61,26 @@
         "sidebar_label": "MapInvoices.js"
       },
       "myPrice/mp_doc1": {
+        "title": "Github Credentials",
+        "sidebar_label": "Github Credentials"
+      },
+      "myPrice/mp_doc2": {
+        "title": "Getting Started",
+        "sidebar_label": "Getting Started"
+      },
+      "myPrice/mp_doc3": {
+        "title": "Project Directory Structure",
+        "sidebar_label": "Project Directory Structure"
+      },
+      "myPrice/mp_doc4": {
+        "title": "Creating Build",
+        "sidebar_label": "Creating Build"
+      },
+      "myPrice/mp_doc5": {
+        "title": "Source ( /src ) Folder",
+        "sidebar_label": "Source Folder"
+      },
+      "myPrice/mp_doc6": {
         "title": "Getting Started",
         "sidebar_label": "Getting Started"
       }

@@ -25,7 +25,7 @@ const siteConfig = {
   tagline: "A Complete end to end solutions...",
   url: "https://Wayool.in", // Your website URL
   //prod baseUrl : "https://waycoolfoodsandproducts.github.io/Documentation/pages/"
-  baseUrl: "https://waycoolfoodsandproducts.github.io/Documentation/pages/", // Base URL for your project */
+  baseUrl: "/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
